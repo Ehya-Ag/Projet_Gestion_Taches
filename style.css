@@ -87,3 +87,20 @@ table, th , td{
     background-color: #ccc;
 }
 
+/*oumar ndiay footer*/
+footer{
+    background-color: #4caf50;
+    text-align: center;
+
+}
+.coordonneés {
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+margin-left: 10px;
+margin-right: 10px;
+font-size: 20px;
+}
+img{
+    width: 50px;
+}
