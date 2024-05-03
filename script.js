@@ -21,12 +21,22 @@ function Ajouter() {
     var taskItem = document.createElement("div");
     taskItem.innerHTML = 
     
-    "<h3>" + task.titre + "</h3>" +
-    "<table>" +
-                        "<th><strong>Description:</strong> </th>" + "<tr><td>" + task.description + "</td></tr>" +
-                        "<th><strong>Date limite:</strong> </th>" + "<tr><td>" +task.dateLimite + "</td></tr>" +
-                        "<th><strong>Avancement:</strong> </th> " + "<tr><td>" +task.avancement + "%</td></tr>" +
-                        "<th><strong>Priorité:</strong> </th> " + "<tr><td>" +task.priorite + "</td></tr>" +
+    "<table><h3>" + task.titre + "</h3>" +
+    
+                        "<th><strong>Description:</strong> </th>" +
+                        "<th><strong>Date limite:</strong> </th>"+
+                        "<th><strong>Avancement:</strong> </th> "  +
+                        "<th><strong>Priorité:</strong> </th> <tr>"
+                         + "<td>" + task.description + "</td>"
+                        
+                         + 
+                         "<td>" +task.dateLimite + "</td>"
+                        
+                        
+                         + "<td>" +task.avancement + "%</td>"
+                       
+                         + "<td>" +task.priorite + "</td></tr>"
+                         +
                         '<button onclick="editTask(this)">Modifier</button>';
                         "</table>" +
                         taskList.appendChild(taskItem);
