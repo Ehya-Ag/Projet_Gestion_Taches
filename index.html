@@ -8,22 +8,39 @@
 </head>
 <body>
     <div class="formulaire">
-        <form id="tache">
-            <label for="titre">Titre</label>
-            <input type="text" placeholder="TITRE" id="titre">
-            <label for="description">Description</label>
-            <textarea placeholder="Description" id="description"></textarea>
-            <label for="datel">Date limite</label>
-            <input type="date" id="datel">
-            <label for="avance">Etat d'avancement</label>
-            <input type="range" id="avance" min="0" max="100" value="0">
+        <form id="taches">
+            <div class="tache">
+                <div>
+                    <label for="titre">Titre</label>
+                    <input type="text" placeholder="TITRE" id="titre">
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                    <textarea placeholder="Description" id="description"></textarea>
+                </div>
+            </div>
+            <div class="tache">
+                <div>
+                    <label for="datel">Date limite</label>
+                    <input type="date" id="datel">
+                </div>
+                <div>
+                    <label for="avance">Etat d'avancement</label>
+                    <input type="range" id="avance" min="0" max="100" value="0">
+                </div>
+            </div>
+           <div class="tache">
             <label for="priorite">Priorité</label>
             <select id="priorite">
                 <option value="faible">Faible</option>
                 <option value="moyenne">Moyenne</option>
                 <option value="forte">Forte</option>
             </select>
-            <button type="button" onclick="addTask()">Ajouter une tâche</button>
+           </div>
+            <div>
+                <button type="button" onclick="addTask()">Ajouter une tâche</button>
+            </div>
+            
         </form>
     </div>
 

@@ -1,4 +1,3 @@
-
 function addTask() {
     // Récupérer les valeurs saisies
     var titre = document.getElementById("titre").value;
