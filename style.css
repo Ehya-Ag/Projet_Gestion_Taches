@@ -4,6 +4,12 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+.fond {
+    display: flex;
+    margin-right: 30%;
+    height: 558px;
+    
+}
 
 .formulaire {
     max-width: 800px;
@@ -13,23 +19,32 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.contenaire{
+    margin-left: 10px;
+    margin-right: 20px;
+    box-shadow: 1px 0 0 8px rgba(124, 137, 192, 0.1);
+}
 h1 {
     text-align: center;
     color: #333;
 }
 
-input {
+input { 
     margin-bottom: 20px;
 }
 
 
 .formulaire label {
     display: flex;
+    justify-content: center;
     margin-bottom: 5px;
+    align-items: center;
     font-weight: bold;
     margin-left: 200px;
     margin-right: 300px;
+    background-color: rgb(226, 225, 225);
+    height: 40px;
+    border-radius: 200px;
 }
 
 .formulaire input[type="text"],
@@ -65,5 +80,10 @@ table, th , td{
     width: 500px;
     margin-left: 100px;
     
+}
+.task-list{
+    display: flex;
+    position: absolute;
+    background-color: #ccc;
 }
 
