@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Gestion de taches</title>
-</head>
-<body>
-    <div class="formulaire">
-        <form id="tache">
-            <label for="titre">Titre</label>
-            <input type="text" placeholder="TITRE" id="titre">
-            <label for="description">Description</label>
-            <textarea placeholder="Description" id="description"></textarea>
-            <label for="datel">Date limite</label>
-            <input type="date" id="datel">
-            <label for="avance">Etat d'avancement</label>
-            <input type="range" id="avance" min="0" max="100" value="0">
-            <label for="priorite">Priorité</label>
-            <select id="priorite">
-                <option value="faible">Faible</option>
-                <option value="moyenne">Moyenne</option>
-                <option value="forte">Forte</option>
-            </select>
-            <button type="button" onclick="addTask()">Ajouter une tâche</button>
+  </head>
+  <body>
+    
+    <header class="header">
+      <img src="images/logo.png" alt="logo du site" />
+      
+      <!-- <div class="font"></div> -->
+        <div class="logo">
+          <p><span>GESTION DE </span>TACHES</p>
+        </div>
+        <!-- <div class="im"><img src="images/logo.png" alt="" /></div> -->
+        <nav>
+        <ul class="navbar">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Tâches</a></li>
+          <li><a href="#">Calendrier</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Paramétre</a></li>
+        </ul>
+<!-- <div class="form">
+        <form>
+       <input type="search" name="search" placeholder="recherche" required>
         </form>
+      </div> -->
+      </nav>
+      </div>
+    </header>
+    <div class="formulaire">
+      
+      <form id="tache">
+        <label for="titre">Titre</label>
+        <input type="text" placeholder="TITRE" id="titre" />
+        <label for="description">Description</label>
+        <textarea placeholder="Description" id="description"></textarea>
+        <label for="datel">Date limite</label>
+        <input type="date" id="datel" />
+        <label for="avance">Etat d'avancement</label>
+        <input type="range" id="avance" min="0" max="100" value="0" />
+        <label for="priorite">Priorité</label>
+        <select id="priorite">
+          <option value="faible">Faible</option>
+          <option value="moyenne">Moyenne</option>
+          <option value="forte">Forte</option>
+        </select>
+        <button type="button" onclick="addTask()">Ajouter une tâche</button>
+      </form>
     </div>
 
     <div class="task-list" id="taskList">
-        <!-- Tâches ajoutées seront affichées ici -->
+      <!-- Tâches ajoutées seront affichées ici -->
     </div>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
