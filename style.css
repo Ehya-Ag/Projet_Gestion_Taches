@@ -11,13 +11,83 @@ body {
     
 }
 
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        padding :0 10%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; 
+        background-color: rgba(86, 115, 122, 0.9);
+        box-shadow: 0 0 10px rgba(39, 24, 133, 0.2);
+        z-index: 15px;
+        
+        
+    }
+
+    header.header img {
+        width:100px;
+        border-radius: 20px;
+      
+    }
+    
+    
+.logo{
+    color:white;
+  font-weight: 700; 
+  font-size: 25px;
+ 
+
+
+}
+
+
+
+.logo span{
+    color: #051a38;}
+
+     nav .navbar li{
+        display: inline-block;
+
+    }
+    nav .navbar a{
+        text-decoration: none;
+        color: white;
+        width: 100px;
+        display: flex;
+        padding: 25px 20px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+
+
+    }
+    nav .navbar a:hover{
+        color:black;
+        cursor: pointer;
+        
+}
+/* .form form {
+    
+    text-align: right;
+     }*/
+
+        
 .formulaire {
+    margin-top: 150px; /*a changer plutard*/
     max-width: 800px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 .contenaire{
     margin-left: 10px;
