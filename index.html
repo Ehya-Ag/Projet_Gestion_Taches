@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Gestion de taches</title>
-  </head>
+    <title>Gestion de taches</title>                
+</head>
   <body>
     
     <header class="header">
@@ -27,6 +27,25 @@
 <!-- <div class="form">
         <form>
        <input type="search" name="search" placeholder="recherche" required>
+</head>
+<body>
+    <div class="formulaire">
+        <form id="tache">
+            <label for="titre">Titre</label>
+            <input type="text" placeholder="TITRE" id="titre">
+            <label for="description">Description</label>
+            <textarea placeholder="Description" id="description"></textarea>
+            <label for="datel">Date limite</label>
+            <input type="date" id="datel">
+            <label for="avance">Etat d'avancement</label>
+            <input type="range" id="avance" min="0" max="100" value="0">
+            <label for="priorite">Priorité</label>
+            <select id="priorite">
+                <option value="faible">Faible</option>
+                <option value="moyenne">Moyenne</option>
+                <option value="forte">Forte</option>
+            </select>
+            <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
         </form>
       </div> -->
       </nav>
@@ -56,6 +75,28 @@
     <div class="task-list" id="taskList">
       <!-- Tâches ajoutées seront affichées ici -->
     </div>
-    <script src="script.js"></script>
   </body>
+<script src="script.js"></script>
+</body>
+<footer>
+    <div class="coordonneés">
+        <div>
+             <img src="images/call.png" alt="">
+            <h3>numero</h3>
+            <p>46526082</p>
+        </div>
+    
+        <div>
+            <img src="images/email.png" alt="">
+            <h3>Email</h3>
+            <p>goupe4@gmail.com</p> 
+        </div>
+    
+        <div>
+            <img src="images/pin.png" alt="">
+            <h3>Adresse</h3>
+            <p>Ilot-k</p>
+         </div>
+    </div> 
+</footer>
 </html>
