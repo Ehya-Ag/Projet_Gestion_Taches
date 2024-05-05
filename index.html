@@ -16,7 +16,7 @@
           <p><span>GESTION DE </span>TACHES</p>
         </div>
         <!-- <div class="im"><img src="images/logo.png" alt="" /></div> -->
-        <nav>
+        <nav id="home">
         <ul class="navbar">
           <li><a href="#">Accueil</a></li>
           <li><a href="#">Tâches</a></li>
@@ -24,41 +24,85 @@
           <li><a href="#">Notifications</a></li>
           <li><a href="#">Paramétre</a></li>
         </ul>
+<!-- <div class="form">
         <form>
        <input type="search" name="search" placeholder="recherche" required>
 </head>
 <body>
-    <section class="forme">
-        <div class="formulaire">
-            
-            <form id="tache" class="contenaire">
-                <label for="titre">Titre</label>
-                <input type="text" placeholder="TITRE" id="titre">
-                <label for="description">Description</label>
-                <textarea placeholder="Description" id="description"></textarea>
-                <label for="datel">Date limite</label>
-                <input type="date" id="datel">
-                <label for="avance">Etat d'avancement</label>
-                <input type="range" id="avance" min="0" max="100" value="0">
-                <label for="priorite">Priorité</label>
-                <select id="priorite">
-                    <option value="faible">Faible</option>
-                    <option value="moyenne">Moyenne</option>
-                    <option value="forte">Forte</option>
-                </select>
-                <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
-            </form>
-        </div>
+    <div class="formulaire">
+        <form id="tache">
+            <label for="titre">Titre</label>
+            <input type="text" placeholder="TITRE" id="titre">
+            <label for="description">Description</label>
+            <textarea placeholder="Description" id="description"></textarea>
+            <label for="datel">Date limite</label>
+            <input type="date" id="datel">
+            <label for="avance">Etat d'avancement</label>
+            <input type="range" id="avance" min="0" max="100" value="0">
+            <label for="priorite">Priorité</label>
+            <select id="priorite">
+                <option value="faible">Faible</option>
+                <option value="moyenne">Moyenne</option>
+                <option value="forte">Forte</option>
+            </select>
+            <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
+        </form>
+      </div> -->
+      </nav>
+      </div>
+    </header>
+<h2class="titre">GESTION DES TACHES</h2>
+    <section class="formulaire">
+      
+      <form id="tache">
+        <label for="titre">Titre</label>
+        <input type="text" placeholder="TITRE" id="titre" />
+        <label for="description">Description</label>
+        <textarea placeholder="Description" id="description"></textarea>
+        <label for="datel">Date limite</label>
+        <input type="date" id="datel" />
+        <label for="avance">Etat d'avancement</label>
+        <input type="range" id="avance" min="0" max="100" value="0" />
+        <label for="priorite">Priorité</label>
+        <select id="priorite">
+          <option value="faible">Faible</option>
+          <option value="moyenne">Moyenne</option>
+          <option value="forte">Forte</option>
+        </select>
+        <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
+      </form>
     </section>
-    
-    <section class="liste">
-        <div class="task-list" id="taskList">
-            <!-- Tâches ajoutées seront affichées ici -->
-        </div>
-    </section>
+    <div class="motivation-introduction">
+      <h2>La clé du succès : suivre son planning et respecter les délais</h2>
+      <p>Dans le tumulte de nos vies bien remplies, jongler avec les multiples responsabilités et engagements peut souvent sembler comme naviguer à travers un océan de tâches en perpétuelle expansion. Cependant, au cœur de cette complexité réside une vérité fondamentale : suivre son planning et respecter les délais sont des pierres angulaires de la réussite personnelle et professionnelle. Chaque tâche accomplie avec soin et dans les temps nous propulse un pas plus loin sur le chemin de notre évolution.</p>
+      <p>La gestion efficace de nos tâches n'est pas simplement une question d'organisation, mais plutôt une question de discipline et de respect envers notre propre potentiel. Chaque engagement que nous honorons à temps représente un pas de plus vers nos objectifs, qu'ils soient modestes ou ambitieux. De la simple liste de courses quotidienne aux projets complexes de notre carrière, chaque tâche accomplie dans les délais est une pierre angulaire de notre succès.</p>
+      <p>Dans cette quête pour une vie plus productive et épanouissante, une application de gestion de tâches devient notre alliée fidèle. Elle nous offre la structure nécessaire pour hiérarchiser nos obligations, gérer notre temps avec discernement et nous rappeler l'importance de chaque échéance. En nous permettant de tracer un chemin clair à travers le dédale de nos activités quotidiennes, elle devient le compagnon indispensable de notre progression personnelle et professionnelle.</p>
+      <p>Ainsi, avec détermination et engagement, nous embrassons l'opportunité offerte par chaque tâche à accomplir. Chaque ligne rayée sur notre liste de tâches représente non seulement un devoir rempli, mais aussi un pas de plus vers la réalisation de nos aspirations les plus profondes. Dans cette quête constante pour évoluer, nous trouvons la motivation nécessaire pour avancer avec confiance, guidés par le respect des délais et la discipline du suivi de notre planning.</p>
+  </div>
+  
+    <div class="calendrie" style="height: 200px; background-color: azure; margin: 300px;">
+      <h2>Calendrier</h2>
+    </div>
+    <section id="menu">
+      <div class="dishes">
+            <table id="taskTable" class="dish">
+              <tr>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Date limite</th>
+                <th>Avancement</th>
+                <th>Priorité</th>
+                <th>Terminée</th>
+                <th>Options</th>
+              </tr>
+            </table>
+          
+      </div>
+  </section> 
   </body>
+
+
 <script src="script.js"></script>
-</body>
 <footer>
     <div class="coordonneés">
         <div>
@@ -80,4 +124,13 @@
          </div>
     </div> 
 </footer>
+<script>
+  var small_menu = document.querySelector('.toggle_menu')
+  var menu = document.querySelector('.menu')
+
+  small_menu.onclick = function(){
+      small_menu.classList.toggle('active');
+      menu.classList.toggle('responsive');
+  }
+</script>
 </html>

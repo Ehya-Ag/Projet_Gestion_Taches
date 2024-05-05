@@ -2,13 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-}
-.fond {
-    display: flex;
-    margin-right: 30%;
-    height: 558px;
-    
+    background-image: url(images/fond3);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -73,6 +69,63 @@ body {
         cursor: pointer;
         
 }
+/*RESPONSIVE*/
+
+/* Pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    .titre {
+      font-size: 24px; /* Réduire la taille du titre */
+      margin-top: 50px; /* Ajuster la marge supérieure */
+    }
+  
+    .formulaire {
+      margin-left: 0; /* Ajuster la marge gauche */
+      margin-right: 10px; /* Ajuster la marge droite */
+      width: 120px;
+    }
+  
+    .motivation-introduction {
+      padding: 10px; /* Ajuster le rembourrage */
+    }
+  
+    .calendrie {
+      margin: 50px auto; /* Centrer le calendrier */
+      height: auto; /* Ajuster la hauteur automatiquement */
+    }
+  
+    #menu {
+      padding: 0 10px; /* Ajuster le rembourrage */
+    }
+  }
+  
+  /* Pour les petits écrans (smartphones) */
+  @media screen and (max-width: 576px) {
+    .titre {
+      font-size: 20px; /* Réduire encore la taille du titre */
+      margin-top: 30px; /* Ajuster la marge supérieure */
+    }
+  
+    .formulaire {
+      margin-left: 5px; /* Ajuster la marge gauche */
+      margin-right: 5px; /* Ajuster la marge droite */
+    }
+  
+    .motivation-introduction {
+      padding: 5px; /* Ajuster le rembourrage */
+    }
+  
+    .calendrie {
+      margin: 30px auto; /* Centrer le calendrier */
+      height: auto; /* Ajuster la hauteur automatiquement */
+    }
+  
+    #menu {
+      padding: 0 5px; /* Ajuster le rembourrage */
+    }
+  }
+  
+
+
 /* .form form {
     
     text-align: right;
@@ -80,8 +133,10 @@ body {
 
         
 .formulaire {
-    margin-top: 500px; /*a changer plutard*/
-    max-width: 800px;
+    display: flex;
+    margin-top: 250px; /*a changer plutard*/
+    max-width: 700px;
+    margin-left: 450px;
     /* margin: 20px auto; */
     padding: 20px;
     background-color: #fff;
@@ -89,32 +144,23 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
 }
-.contenaire{
-    margin-left: 10px;
-    margin-right: 20px;
-    box-shadow: 1px 0 0 8px rgba(124, 137, 192, 0.1);
-}
+
 h1 {
     text-align: center;
     color: #333;
 }
 
-input { 
+input {
     margin-bottom: 20px;
 }
 
 
 .formulaire label {
     display: flex;
-    justify-content: center;
     margin-bottom: 5px;
-    align-items: center;
     font-weight: bold;
     margin-left: 200px;
     margin-right: 300px;
-    background-color: rgb(226, 225, 225);
-    height: 40px;
-    border-radius: 200px;
 }
 
 .formulaire input[type="text"],
@@ -138,9 +184,11 @@ input {
     border-radius: 3px;
     cursor: pointer;
     font-size: 16px;
+
 }
-table, th , td{
-    border: 1px solid black;
+table, th , tr{
+
+    border: 2px solid black;
     border-collapse: collapse;
     border-radius: 6px;
     margin-top: 25px;
@@ -151,10 +199,89 @@ table, th , td{
     margin-left: 100px;
     
 }
-.task-list{
+/* affichage */
+.calendrier{
+    width: 500px;
+    height: 11000px;
+    background-color: aliceblue;
+}
+.affiche{
+    background-color: #6d836e;
+    font-size: 20px;
+    box-shadow: 1px 0 1px 0 rgba(149, 162, 206, 0.1);
+    border-radius: 20px;
+}
+.taSK-list{
+    margin-top: 150px; /*a changer plutard*/
+    max-width: 800px;
+    /* margin: 20px auto; */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*a voir*/
+.dishes{
     display: flex;
-    position: absolute;
-    background-color: #ccc;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+table {
+    
+    position: relative;
+    height: 280px;
+    width: 50%;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+}
+
+/* .dishes .dish th{
+    text-align: center;
+    font-size: 10px;
+}*/
+div .calendrier{
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: 0;
+    background-color: #27ae60;
+    padding: 5px 60px;
+    color: #fff;
+    border-radius: 6px;
+} 
+.motivation-introduction {
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.motivation-introduction h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.motivation-introduction p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.motivation-introduction p:last-child {
+    margin-bottom: 0;
 }
 
 /*oumar ndiay footer*/
