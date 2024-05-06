@@ -479,3 +479,217 @@ img{
     padding: 0 10px; 
   }
 }
+.toggle_menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .titre {
+      font-size: 24px; /* Réduire la taille du titre */
+      margin-top: 50px; /* Ajuster la marge supérieure */
+    }
+    .toggle_menu{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .toggle_menu::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border: 1px solid #27ae60;
+        box-shadow: 0 10px 0 #27ae60;
+        transform: translateY(-10px);
+    }
+    .toggle_menu.active::before{
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #27ae60;
+    }
+    .toggle_menu::after{
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border: 1px solid #27ae60;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::after{
+        transform: translateY(0) rotate(-135deg);
+        box-shadow: 0 0 0 #27ae60;
+    }
+
+    header .menu.responsive{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+    }
+
+    header .navbar.responsive li{
+        margin: 15px 0;
+    }
+
+    header .navbar{
+        display: none;
+    }
+    header{
+        padding: 0 20px;
+    }
+    #home{
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+    }
+
+    #home .left , #home .right{
+        width: 100%;
+        padding: 0;
+    }
+
+    #home .left{
+        margin: 100px 0;
+    }
+
+    #home .left h1{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #home .left h4{
+        font-size: 15px;
+    }
+    #home .left p{
+        font-size: 15px;
+    }
+
+    #menu .dishes .dish{
+        width: 100%;
+        max-width: 260px;
+    }
+    .tableau{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px; 
+        /* max-width: 700px; */
+        /* margin-left: 450px; */
+        padding: 20px;
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    table{
+        width: 100%;
+        background-color: aliceblue;
+        margin: 10px;
+    }
+
+
+
+  
+    .formulaire {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 90%;
+        margin-top: 100px; 
+        /* max-width: 700px; */
+        /* margin-left: 450px; */
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+    }
+    .form1{
+        display: block;
+    }
+    .form1 .form2{
+        display: block;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        margin: 5px;
+    }
+    
+    .form3{
+        display: block;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .formulaire label {
+        display: block;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .formulaire textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+    
+    .formulaire input[type="text"],
+    /* .formulaire textarea, */
+    .formulaire select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    
+    .formulaire button {
+        display: block;
+        /* width: 100%; */
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+  
+    .motivation-introduction {
+      padding: 10px; /* Ajuster le rembourrage */
+    }
+  
+    .calendrie {
+      margin: 50px auto; /* Centrer le calendrier */
+      height: auto; /* Ajuster la hauteur automatiquement */
+    }
+  
+    #menu {
+      padding: 0 10px; /* Ajuster le rembourrage */
+    }
+  }
+  
