@@ -69,80 +69,49 @@ body {
         cursor: pointer;
         
 }
-/*RESPONSIVE*/
-
-/* Pour les écrans de taille moyenne */
-@media screen and (max-width: 768px) {
-    .titre {
-      font-size: 24px; /* Réduire la taille du titre */
-      margin-top: 50px; /* Ajuster la marge supérieure */
-    }
-  
-    .formulaire {
-      margin-left: 0; /* Ajuster la marge gauche */
-      margin-right: 10px; /* Ajuster la marge droite */
-      width: 120px;
-    }
-  
-    .motivation-introduction {
-      padding: 10px; /* Ajuster le rembourrage */
-    }
-  
-    .calendrie {
-      margin: 50px auto; /* Centrer le calendrier */
-      height: auto; /* Ajuster la hauteur automatiquement */
-    }
-  
-    #menu {
-      padding: 0 10px; /* Ajuster le rembourrage */
-    }
-  }
-  
-  /* Pour les petits écrans (smartphones) */
-  @media screen and (max-width: 576px) {
-    .titre {
-      font-size: 20px; /* Réduire encore la taille du titre */
-      margin-top: 30px; /* Ajuster la marge supérieure */
-    }
-  
-    .formulaire {
-      margin-left: 5px; /* Ajuster la marge gauche */
-      margin-right: 5px; /* Ajuster la marge droite */
-    }
-  
-    .motivation-introduction {
-      padding: 5px; /* Ajuster le rembourrage */
-    }
-  
-    .calendrie {
-      margin: 30px auto; /* Centrer le calendrier */
-      height: auto; /* Ajuster la hauteur automatiquement */
-    }
-  
-    #menu {
-      padding: 0 5px; /* Ajuster le rembourrage */
-    }
-  }
-  
-
-
-/* .form form {
-    
-    text-align: right;
-     }*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
         
 .formulaire {
     display: flex;
-    margin-top: 250px; /*a changer plutard*/
-    max-width: 700px;
-    margin-left: 450px;
-    /* margin: 20px auto; */
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-top: 100px; 
+    /* max-width: 700px; */
+    /* margin-left: 450px; */
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+}
+
+.form1{
+    display: flex;
+}
+.form1 .form2{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 70%;
+    margin: 15px;
+}
+
+.form3{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    margin: 15px;
+}
+
+#tache{
+    width: 100%;
 }
 
 h1 {
@@ -150,25 +119,29 @@ h1 {
     color: #333;
 }
 
-input {
+/* input {
     margin-bottom: 20px;
-}
+} */
 
 
 .formulaire label {
     display: flex;
-    margin-bottom: 5px;
     font-weight: bold;
-    margin-left: 200px;
-    margin-right: 300px;
+    margin: 10px;
+}
+.formulaire textarea{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .formulaire input[type="text"],
-.formulaire textarea,
+/* .formulaire textarea, */
 .formulaire select {
-    width: 100%;
+    width: 50%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
@@ -176,7 +149,7 @@ input {
 
 .formulaire button {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     background-color: #4caf50;
     color: #fff;
@@ -184,21 +157,45 @@ input {
     border-radius: 3px;
     cursor: pointer;
     font-size: 16px;
-
 }
-table, th , tr{
 
-    border: 2px solid black;
-    border-collapse: collapse;
-    border-radius: 6px;
-    margin-top: 25px;
-    justify-items: center;
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.tableau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px; 
+    /* max-width: 700px; */
+    /* margin-left: 450px; */
+    padding: 20px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table{
+    width: 60%;
+    background-color: aliceblue;
+}
+
+table, tr{
+
+    border: 0.5px solid black;
+    border-collapse: collapse; 
+    text-align: center;
+    /* justify-items: center;
     justify-content: center;
     text-align: center;
     width: 500px;
-    margin-left: 100px;
+    margin-left: 100px; */
     
-}
+} 
 /* affichage */
 .calendrier{
     width: 500px;
@@ -220,34 +217,6 @@ table, th , tr{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/*a voir*/
-.dishes{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-around;
-}
-table {
-    
-    position: relative;
-    height: 280px;
-    width: 50%;
-    background-color: #fff;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 6px;
-    margin-bottom: 35px;
-    transition: 0.5s;
-    box-shadow: 0 0 10px rgb(0,0,0,0.1);
-}
-
-/* .dishes .dish th{
-    text-align: center;
-    font-size: 10px;
-}*/
 div .calendrier{
     margin-top: 10px;
     font-size: 14px;
@@ -288,7 +257,7 @@ div .calendrier{
 footer{
     background-color: #4caf50;
     text-align: center;
-
+    padding-top: 20px;
 }
 .coordonneés {
 display: flex;
@@ -301,3 +270,217 @@ font-size: 20px;
 img{
     width: 50px;
 }
+.toggle_menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .titre {
+      font-size: 24px; /* Réduire la taille du titre */
+      margin-top: 50px; /* Ajuster la marge supérieure */
+    }
+    .toggle_menu{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .toggle_menu::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border: 1px solid #27ae60;
+        box-shadow: 0 10px 0 #27ae60;
+        transform: translateY(-10px);
+    }
+    .toggle_menu.active::before{
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #27ae60;
+    }
+    .toggle_menu::after{
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border: 1px solid #27ae60;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::after{
+        transform: translateY(0) rotate(-135deg);
+        box-shadow: 0 0 0 #27ae60;
+    }
+
+    header .menu.responsive{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+    }
+
+    header .navbar.responsive li{
+        margin: 15px 0;
+    }
+
+    header .navbar{
+        display: none;
+    }
+    header{
+        padding: 0 20px;
+    }
+    #home{
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+    }
+
+    #home .left , #home .right{
+        width: 100%;
+        padding: 0;
+    }
+
+    #home .left{
+        margin: 100px 0;
+    }
+
+    #home .left h1{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #home .left h4{
+        font-size: 15px;
+    }
+    #home .left p{
+        font-size: 15px;
+    }
+
+    #menu .dishes .dish{
+        width: 100%;
+        max-width: 260px;
+    }
+    .tableau{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px; 
+        /* max-width: 700px; */
+        /* margin-left: 450px; */
+        padding: 20px;
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    table{
+        width: 100%;
+        background-color: aliceblue;
+        margin: 10px;
+    }
+
+
+
+  
+    .formulaire {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 90%;
+        margin-top: 100px; 
+        /* max-width: 700px; */
+        /* margin-left: 450px; */
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+    }
+    .form1{
+        display: block;
+    }
+    .form1 .form2{
+        display: block;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        margin: 5px;
+    }
+    
+    .form3{
+        display: block;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .formulaire label {
+        display: block;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .formulaire textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+    
+    .formulaire input[type="text"],
+    /* .formulaire textarea, */
+    .formulaire select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    
+    .formulaire button {
+        display: block;
+        /* width: 100%; */
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+  
+    .motivation-introduction {
+      padding: 10px; /* Ajuster le rembourrage */
+    }
+  
+    .calendrie {
+      margin: 50px auto; /* Centrer le calendrier */
+      height: auto; /* Ajuster la hauteur automatiquement */
+    }
+  
+    #menu {
+      padding: 0 10px; /* Ajuster le rembourrage */
+    }
+  }
+  

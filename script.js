@@ -200,7 +200,12 @@ function Ajouter() {
     optionsCell.appendChild(supprimerButton);
 
     // Réinitialiser le formulaire
-    document.getElementById("tacheForm").reset();
+    // document.getElementById("tacheForm").reset();
+    var titre = document.getElementById("titre").value ="";
+    var description = document.getElementById("description").value  ="";
+    var dateLimite = document.getElementById("datel").value  ="";
+    var avancement = document.getElementById("avance").value  ="";
+    var priorite = document.getElementById("priorite").value ="";
 }
 
 function modifier(button) {
@@ -226,3 +231,12 @@ function supprimer(button) {
     var row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
+
+
+var small_menu = document.querySelector('.toggle_menu')
+var menu = document.querySelector('.menu')
+
+small_menu.onclick = function(){
+    small_menu.classList.toggle('active');
+    menu.classList.toggle('responsive');
+ }
