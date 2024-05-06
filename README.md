@@ -24,6 +24,7 @@ La gestion efficace des tâches est essentielle pour maintenir l'organisation et
 ## Réalisé par 
 - Groupe 4
   1. Ehya Ag Mohamed
-  2. Hamallah manga
+  2. Hama Houllah Mangassouba
   3. Mohamed Bankolé
   4. Fatouma Cissé
+  5. Oumar ndiaye
