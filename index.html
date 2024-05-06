@@ -18,112 +18,110 @@
         <!-- <div class="im"><img src="images/logo.png" alt="" /></div> -->
         <nav id="home">
         <ul class="navbar">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Tâches</a></li>
-          <li><a href="#">Calendrier</a></li>
-          <li><a href="#">Notifications</a></li>
-          <li><a href="#">Paramétre</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#motivation">Motivation</a></li>
+          <li><a href="#menu">Tâches</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
-<!-- <div class="form">
-        <form>
-       <input type="search" name="search" placeholder="recherche" required>
-</head>
-<body>
-    <div class="formulaire">
+      </nav>
+      </div>
+      <div class="toggle_menu"></div>
+    </header>
+    
+    <div class="container">
+      <section class="formulaire">
+        
         <form id="tache">
-            <label for="titre">Titre</label>
-            <input type="text" placeholder="TITRE" id="titre">
-            <label for="description">Description</label>
-            <textarea placeholder="Description" id="description"></textarea>
-            <label for="datel">Date limite</label>
-            <input type="date" id="datel">
-            <label for="avance">Etat d'avancement</label>
-            <input type="range" id="avance" min="0" max="100" value="0">
-            <label for="priorite">Priorité</label>
-            <select id="priorite">
+          <div class="form1">
+            <div class="form2">
+              <label for="titre">Titre</label>
+              <input type="text" placeholder="TITRE" name="" id="titre" />
+            </div>
+            <div class="form2">
+              <label for="priorite">Priorité</label>
+              <select id="priorite">
                 <option value="faible">Faible</option>
                 <option value="moyenne">Moyenne</option>
                 <option value="forte">Forte</option>
-            </select>
+              </select>
+            </div>
+          </div>
+          <div class="form1">
+            <div class="form2">
+              <label for="datel">Date limite</label>
+              <input type="date" id="datel" />
+            </div>
+            <div class="form2">
+              <label for="avance">Etat d'avancement</label>
+              <input type="range" id="avance" min="0" max="100" value="0" />
+            </div>
+          </div>
+          <div class="form3">
+            <label for="description">Description</label>
+            <textarea placeholder="Description" id="description"></textarea>
+          </div>
+          <div class="btn">
             <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
+          </div>
         </form>
-      </div> -->
-      </nav>
-      </div>
-    </header>
-<h2class="titre">GESTION DES TACHES</h2>
-    <section class="formulaire">
-      
-      <form id="tache">
-        <label for="titre">Titre</label>
-        <input type="text" placeholder="TITRE" id="titre" />
-        <label for="description">Description</label>
-        <textarea placeholder="Description" id="description"></textarea>
-        <label for="datel">Date limite</label>
-        <input type="date" id="datel" />
-        <label for="avance">Etat d'avancement</label>
-        <input type="range" id="avance" min="0" max="100" value="0" />
-        <label for="priorite">Priorité</label>
-        <select id="priorite">
-          <option value="faible">Faible</option>
-          <option value="moyenne">Moyenne</option>
-          <option value="forte">Forte</option>
-        </select>
-        <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
-      </form>
-    </section>
-    <div class="motivation-introduction">
-      <h2>La clé du succès : suivre son planning et respecter les délais</h2>
-      <p>Dans le tumulte de nos vies bien remplies, jongler avec les multiples responsabilités et engagements peut souvent sembler comme naviguer à travers un océan de tâches en perpétuelle expansion. Cependant, au cœur de cette complexité réside une vérité fondamentale : suivre son planning et respecter les délais sont des pierres angulaires de la réussite personnelle et professionnelle. Chaque tâche accomplie avec soin et dans les temps nous propulse un pas plus loin sur le chemin de notre évolution.</p>
-      <p>La gestion efficace de nos tâches n'est pas simplement une question d'organisation, mais plutôt une question de discipline et de respect envers notre propre potentiel. Chaque engagement que nous honorons à temps représente un pas de plus vers nos objectifs, qu'ils soient modestes ou ambitieux. De la simple liste de courses quotidienne aux projets complexes de notre carrière, chaque tâche accomplie dans les délais est une pierre angulaire de notre succès.</p>
-      <p>Dans cette quête pour une vie plus productive et épanouissante, une application de gestion de tâches devient notre alliée fidèle. Elle nous offre la structure nécessaire pour hiérarchiser nos obligations, gérer notre temps avec discernement et nous rappeler l'importance de chaque échéance. En nous permettant de tracer un chemin clair à travers le dédale de nos activités quotidiennes, elle devient le compagnon indispensable de notre progression personnelle et professionnelle.</p>
-      <p>Ainsi, avec détermination et engagement, nous embrassons l'opportunité offerte par chaque tâche à accomplir. Chaque ligne rayée sur notre liste de tâches représente non seulement un devoir rempli, mais aussi un pas de plus vers la réalisation de nos aspirations les plus profondes. Dans cette quête constante pour évoluer, nous trouvons la motivation nécessaire pour avancer avec confiance, guidés par le respect des délais et la discipline du suivi de notre planning.</p>
-  </div>
+      </section>
+      <div class="motivation-introduction" id="motivation">
+        <h2>La clé du succès : suivre son planning et respecter les délais</h2>
+        <p>Dans le tumulte de nos vies bien remplies, jongler avec les multiples responsabilités et engagements peut souvent sembler comme naviguer à travers un océan de tâches en perpétuelle expansion. Cependant, au cœur de cette complexité réside une vérité fondamentale : suivre son planning et respecter les délais sont des pierres angulaires de la réussite personnelle et professionnelle. Chaque tâche accomplie avec soin et dans les temps nous propulse un pas plus loin sur le chemin de notre évolution.</p>
+        <p>La gestion efficace de nos tâches n'est pas simplement une question d'organisation, mais plutôt une question de discipline et de respect envers notre propre potentiel. Chaque engagement que nous honorons à temps représente un pas de plus vers nos objectifs, qu'ils soient modestes ou ambitieux. De la simple liste de courses quotidienne aux projets complexes de notre carrière, chaque tâche accomplie dans les délais est une pierre angulaire de notre succès.</p>
+        <p>Dans cette quête pour une vie plus productive et épanouissante, une application de gestion de tâches devient notre alliée fidèle. Elle nous offre la structure nécessaire pour hiérarchiser nos obligations, gérer notre temps avec discernement et nous rappeler l'importance de chaque échéance. En nous permettant de tracer un chemin clair à travers le dédale de nos activités quotidiennes, elle devient le compagnon indispensable de notre progression personnelle et professionnelle.</p>
+        <p>Ainsi, avec détermination et engagement, nous embrassons l'opportunité offerte par chaque tâche à accomplir. Chaque ligne rayée sur notre liste de tâches représente non seulement un devoir rempli, mais aussi un pas de plus vers la réalisation de nos aspirations les plus profondes. Dans cette quête constante pour évoluer, nous trouvons la motivation nécessaire pour avancer avec confiance, guidés par le respect des délais et la discipline du suivi de notre planning.</p>
+    </div> 
+      <section id="menu" class="tableau">
+              <table id="taskTable" class="dish">
+                <thead>
+                  <tr>
+                    <th>Titre</th>
+                    <th>Description</th>
+                    <th>Date limite</th>
+                    <th>Avancement</th>
+                    <th>Priorité</th>
+                    <th>Terminée</th>
+                    <th>Options</th>
+                  </tr>
+                </thead>
+                <tbody>
   
-    <div class="calendrie" style="height: 200px; background-color: azure; margin: 300px;">
-      <h2>Calendrier</h2>
+                </tbody>
+              </table>
+        <!-- </div> -->
+    </section> 
     </div>
-    <section id="menu">
-      <div class="dishes">
-            <table id="taskTable" class="dish">
-              <tr>
-                <th>Titre</th>
-                <th>Description</th>
-                <th>Date limite</th>
-                <th>Avancement</th>
-                <th>Priorité</th>
-                <th>Terminée</th>
-                <th>Options</th>
-              </tr>
-            </table>
-          
-      </div>
-  </section> 
-  </body>
 
+  
+    <!-- <div class="calendrie" style="height: 200px; background-color: azure; margin: 300px;">
+      <h2>Calendrier</h2>
+    </div> -->
+  </body>
+    <footer id="footer">
+        <div class="coordonneés">
+            <div>
+                <img src="images/call.png" alt="">
+                <h3>numero</h3>
+                <p>46526082</p>
+            </div>
+        
+            <div>
+                <img src="images/email.png" alt="">
+                <h3>Email</h3>
+                <p>goupe4@gmail.com</p> 
+            </div>
+        
+            <div>
+                <img src="images/pin.png" alt="">
+                <h3>Adresse</h3>
+                <p>Ilot-k</p>
+            </div>
+        </div> 
+    </footer>
 
 <script src="script.js"></script>
-<footer>
-    <div class="coordonneés">
-        <div>
-             <img src="images/call.png" alt="">
-            <h3>numero</h3>
-            <p>46526082</p>
-        </div>
-    
-        <div>
-            <img src="images/email.png" alt="">
-            <h3>Email</h3>
-            <p>goupe4@gmail.com</p> 
-        </div>
-    
-        <div>
-            <img src="images/pin.png" alt="">
-            <h3>Adresse</h3>
-            <p>Ilot-k</p>
-         </div>
-    </div> 
-</footer>
+
 <script>
   var small_menu = document.querySelector('.toggle_menu')
   var menu = document.querySelector('.menu')
@@ -132,5 +130,6 @@
       small_menu.classList.toggle('active');
       menu.classList.toggle('responsive');
   }
-</script>
+</script> 
+
 </html>
