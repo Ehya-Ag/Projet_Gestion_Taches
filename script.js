@@ -1,13 +1,13 @@
 
 function Ajouter() {
 
-    var titre = document.getElementById("titre").value;
-    var description = document.getElementById("description").value;
-    var dateLimite = document.getElementById("datel").value;
-    var avancement = document.getElementById("avance").value;
-    var priorite = document.getElementById("priorite").value;
+    let titre = document.getElementById("titre").value;
+    let description = document.getElementById("description").value;
+    let dateLimite = document.getElementById("datel").value;
+    let avancement = document.getElementById("avance").value;
+    let priorite = document.getElementById("priorite").value;
 
-    var task = {
+    let task = {
         titre: titre,
         description: description,
         dateLimite: dateLimite,
@@ -17,8 +17,8 @@ function Ajouter() {
     };
 
   
-    var taskTable = document.getElementById("taskTable");
-    var newRow = taskTable.insertRow(-1); 
+    let taskTable = document.getElementById("taskTable");
+    let newRow = taskTable.insertRow(-1); 
 
     newRow.insertCell(0).textContent = task.titre;
     newRow.insertCell(1).textContent = task.description;
@@ -27,8 +27,8 @@ function Ajouter() {
     newRow.insertCell(4).textContent = task.priorite;
     
 
-    var termineeCell = newRow.insertCell(5);
-    var termineeCheckbox = document.createElement("input");
+    let termineeCell = newRow.insertCell(5);
+    let termineeCheckbox = document.createElement("input");
     termineeCheckbox.type = "checkbox";
     termineeCheckbox.onclick = function() {
         task.terminee = this.checked;
@@ -36,38 +36,38 @@ function Ajouter() {
     termineeCell.appendChild(termineeCheckbox);
 
 
-    var optionsCell = newRow.insertCell(6);
-    var detailsButton = document.createElement("button");
+    let optionsCell = newRow.insertCell(6);
+    let detailsButton = document.createElement("button");
     detailsButton.textContent = "Détails";
     detailsButton.onclick = function() {
         showDetails(this);
     };
     optionsCell.appendChild(detailsButton);
 
-    var modifierButton = document.createElement("button");
+    let modifierButton = document.createElement("button");
     modifierButton.textContent = "Modifier";
     modifierButton.onclick = function() {
         modifier(this);
     };
     optionsCell.appendChild(modifierButton);
-
-    var supprimerButton = document.createElement("button");
-    supprimerButton.textContent = "Supprimer";
-    supprimerButton.onclick = function() {
-        supprimer(this);
-    };
-    optionsCell.appendChild(supprimerButton);
+//boutton supprimer
+    // let supprimerButton = document.createElement("button");
+    // supprimerButton.textContent = "Supprimer";
+    // supprimerButton.onclick = function() {
+    //     supprimer(this);
+    // };
+    // optionsCell.appendChild(supprimerButton);
 
     document.getElementById("tacheForm").reset();
 }
 
 function modifier(button) {
-    var row = button.parentNode.parentNode;
-    var titre = row.cells[0].textContent;
-    var description = row.cells[1].textContent;
-    var dateLimite = row.cells[2].textContent;
-    var avancement = row.cells[3].textContent.replace("%", "");
-    var priorite = row.cells[4].textContent;
+    let row = button.parentNode.parentNode;
+    let titre = row.cells[0].textContent;
+    let description = row.cells[1].textContent;
+    let dateLimite = row.cells[2].textContent;
+    let avancement = row.cells[3].textContent.replace("%", "");
+    let priorite = row.cells[4].textContent;
 
 
     document.getElementById("titre").value = titre;
@@ -78,22 +78,22 @@ function modifier(button) {
 
     row.parentNode.removeChild(row);
 }
-
-function supprimer(button) {
-    var row = button.parentNode.parentNode;
-    row.parentNode.removeChild(row);
-}
+//fonction suppression
+// function supprimer(button) {
+//     let row = button.parentNode.parentNode;
+//     row.parentNode.removeChild(row);
+// }
 function showDetails(button) {
-    var row = button.parentNode.parentNode; 
-    var titre = row.cells[0].textContent;
-    var description = row.cells[1].textContent;
-    var dateLimite = row.cells[2].textContent;
-    var avancement = row.cells[3].textContent;
-    var priorite = row.cells[4].textContent;
-    var terminee = row.cells[5].getElementsByTagName('input')[0].checked; 
+    let row = button.parentNode.parentNode; 
+    let titre = row.cells[0].textContent;
+    let description = row.cells[1].textContent;
+    let dateLimite = row.cells[2].textContent;
+    let avancement = row.cells[3].textContent;
+    let priorite = row.cells[4].textContent;
+    let terminee = row.cells[5].getElementsByTagName('input')[0].checked; 
 
  
-    var detailMessage = "Titre: " + titre + "\n" +
+    let detailMessage = "Titre: " + titre + "\n" +
                         "Description: " + description + "\n" +
                         "Date Limite: " + dateLimite + "\n" +
                         "Avancement: " + avancement + "\n" +
