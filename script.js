@@ -15,7 +15,7 @@ function Ajouter() {
         priorite: priorite,
         terminee: false 
     };
-
+//
   
     let taskTable = document.getElementById("taskTable");
     let newRow = taskTable.insertRow(-1); 
@@ -57,6 +57,12 @@ function Ajouter() {
     //     supprimer(this);
     // };
     // optionsCell.appendChild(supprimerButton);
+
+     document.getElementById("titre").value ="";
+     document.getElementById("description").value ="";
+     document.getElementById("datel").value ="";
+     document.getElementById("avance").value ="";
+     document.getElementById("priorite").value ="";
 
     document.getElementById("tacheForm").reset();
 }
