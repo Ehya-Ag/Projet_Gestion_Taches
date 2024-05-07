@@ -7,7 +7,6 @@
     <title>Gestion de taches</title>                
 </head>
   <body>
-    
     <header class="header">
       <img src="images/logo.png" alt="logo du site" />
       
@@ -27,15 +26,13 @@
       </div>
       <div class="toggle_menu"></div>
     </header>
-    
     <div class="container">
       <section class="formulaire">
-        
         <form id="tache">
           <div class="form1">
             <div class="form2">
               <label for="titre">Titre</label>
-              <input type="text" placeholder="TITRE" name="" id="titre" />
+              <input type="text" placeholder="TITRE" name="titre" id="titre" />
             </div>
             <div class="form2">
               <label for="priorite">Priorité</label>
@@ -49,16 +46,16 @@
           <div class="form1">
             <div class="form2">
               <label for="datel">Date limite</label>
-              <input type="date" id="datel" />
+              <input type="date" name="" id="datel" />
             </div>
             <div class="form2">
               <label for="avance">Etat d'avancement</label>
-              <input type="range" id="avance" min="0" max="100" value="0" />
+              <input type="range" name="" id="avance" min="0" max="100" value="0" />
             </div>
           </div>
           <div class="form3">
             <label for="description">Description</label>
-            <textarea placeholder="Description" id="description"></textarea>
+            <textarea placeholder="Description" name="" id="description"></textarea>
           </div>
           <div class="btn">
             <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
@@ -86,18 +83,9 @@
                     <th>Options</th>
                   </tr>
                 </thead>
-                <tbody>
-  
-                </tbody>
               </table>
-        <!-- </div> -->
     </section> 
     </div>
-
-  
-    <!-- <div class="calendrie" style="height: 200px; background-color: azure; margin: 300px;">
-      <h2>Calendrier</h2>
-    </div> -->
   </body>
     <footer id="footer">
         <div class="coordonneés">
@@ -106,13 +94,11 @@
                 <h3>numero</h3>
                 <p>46526082</p>
             </div>
-        
             <div>
                 <img src="images/email.png" alt="">
                 <h3>Email</h3>
                 <p>goupe4@gmail.com</p> 
             </div>
-        
             <div>
                 <img src="images/pin.png" alt="">
                 <h3>Adresse</h3>
@@ -122,11 +108,9 @@
     </footer>
 
 <script src="script.js"></script>
-
 <script>
   var small_menu = document.querySelector('.toggle_menu')
   var menu = document.querySelector('.menu')
-
   small_menu.onclick = function(){
       small_menu.classList.toggle('active');
       menu.classList.toggle('responsive');
