@@ -15,7 +15,7 @@ function Ajouter() {
         priorite: priorite,
         terminee: false 
     };
-
+//
   
     let taskTable = document.getElementById("taskTable");
     let newRow = taskTable.insertRow(-1); 
@@ -58,7 +58,18 @@ function Ajouter() {
     // };
     // optionsCell.appendChild(supprimerButton);
 
-    document.getElementById("tacheForm").reset();
+     document.getElementById("titre").value ="";
+     document.getElementById("description").value ="";
+     document.getElementById("datel").value ="";
+     document.getElementById("avance").value ="";
+     document.getElementById("priorite").value ="";
+
+    
+    // Afficher un message de validation
+    alert("La tâche a été ajoutée avec succès !");
+
+    // Réinitialiser le formulaire
+    document.getElementById("tache").reset();
 }
 
 function modifier(button) {
@@ -102,4 +113,3 @@ function showDetails(button) {
     alert(detailMessage);
 }
 //Calendrie
-
