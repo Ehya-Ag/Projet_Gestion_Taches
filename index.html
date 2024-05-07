@@ -6,24 +6,62 @@
     <link rel="stylesheet" href="style.css" />
     <title>Gestion de taches</title>                
 </head>
-<body>
-    <div class="formulaire">
+  <body>
+    
+    <header class="header">
+      <img src="images/logo.png" alt="logo du site" />
+      
+      <!-- <div class="font"></div> -->
+        <div class="logo">
+          <p><span>GESTION DE </span>TACHES</p>
+        </div>
+        <!-- <div class="im"><img src="images/logo.png" alt="" /></div> -->
+        <nav id="home">
+        <ul class="navbar">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#motivation">Motivation</a></li>
+          <li><a href="#menu">Tâches</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div class="toggle_menu"></div>
+    </header>
+    <div class="container">
+      <section class="formulaire">
+        
         <form id="tache">
-            <label for="titre">Titre</label>
-            <input type="text" placeholder="TITRE" id="titre">
-            <label for="description">Description</label>
-            <textarea placeholder="Description" id="description"></textarea>
-            <label for="datel">Date limite</label>
-            <input type="date" id="datel">
-            <label for="avance">Etat d'avancement</label>
-            <input type="range" id="avance" min="0" max="100" value="0">
-            <label for="priorite">Priorité</label>
-            <select id="priorite">
+          <div class="form1">
+            <div class="form2">
+              <label for="titre">Titre</label>
+              <input type="text" placeholder="TITRE" name="" id="titre" />
+            </div>
+            <div class="form2">
+              <label for="priorite">Priorité</label>
+              <select id="priorite">
                 <option value="faible">Faible</option>
                 <option value="moyenne">Moyenne</option>
                 <option value="forte">Forte</option>
-            </select>
+              </select>
+            </div>
+          </div>
+          <div class="form1">
+            <div class="form2">
+              <label for="datel">Date limite</label>
+              <input type="date" id="datel" />
+            </div>
+            <div class="form2">
+              <label for="avance">Etat d'avancement</label>
+              <input type="range" id="avance" min="0" max="100" value="0" />
+            </div>
+          </div>
+          <div class="form3">
+            <label for="description">Description</label>
+            <textarea placeholder="Description" id="description"></textarea>
+          </div>
+          <div class="btn">
             <button type="button" onclick="Ajouter()">Ajouter une tâche</button>
+          </div>
         </form>
       </section>
       <div class="motivation-introduction" id="motivation">
@@ -34,6 +72,7 @@
         <p>Ainsi, avec détermination et engagement, nous embrassons l'opportunité offerte par chaque tâche à accomplir. Chaque ligne rayée sur notre liste de tâches représente non seulement un devoir rempli, mais aussi un pas de plus vers la réalisation de nos aspirations les plus profondes. Dans cette quête constante pour évoluer, nous trouvons la motivation nécessaire pour avancer avec confiance, guidés par le respect des délais et la discipline du suivi de notre planning.</p>
     </div> 
       <section id="menu" class="tableau">
+        <!-- <div class="dishes"> -->
               <table id="taskTable" class="dish">
                 <thead>
                   <tr>
@@ -53,12 +92,9 @@
         <!-- </div> -->
     </section> 
     </div>
-
-  
-    <!-- <div class="calendrie" style="height: 200px; background-color: azure; margin: 300px;">
-      <h2>Calendrier</h2>
-    </div> -->
-  </body>
+    
+ 
+   
     <footer id="footer">
         <div class="coordonneés">
             <div>
@@ -80,10 +116,10 @@
             </div>
         </div> 
     </footer>
-
+</body>
 <script src="script.js"></script>
 
-<script>
+ <script>
   var small_menu = document.querySelector('.toggle_menu')
   var menu = document.querySelector('.menu')
 
