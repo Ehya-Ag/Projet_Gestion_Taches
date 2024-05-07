@@ -7,6 +7,11 @@ body {
   background-size: cover;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   header{
       display: flex;
       align-items: center;
@@ -19,20 +24,42 @@ body {
       right: 0; 
       background-color: rgba(86, 115, 122, 0.9);
       box-shadow: 0 0 10px rgba(39, 24, 133, 0.2);
+<<<<<<< HEAD
       z-index: 15px;     
+=======
+      z-index: 15px;
+      
+      
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   }
 
   header.header img {
       width:100px;
       border-radius: 20px;
+<<<<<<< HEAD
   }
   
+=======
+    
+  }
+  
+  
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
 .logo{
   color:white;
 font-weight: 700; 
 font-size: 25px;
 
+<<<<<<< HEAD
 }
+=======
+
+
+}
+
+
+
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
 .logo span{
   color: #051a38;}
 
@@ -64,6 +91,10 @@ font-size: 25px;
   align-items: center;
   flex-direction: column;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
       
 .formulaire {
   display: flex;
@@ -71,6 +102,11 @@ font-size: 25px;
   align-items: center;
   width: 60%;
   margin-top: 100px; 
+<<<<<<< HEAD
+=======
+  /* max-width: 700px; */
+  /* margin-left: 450px; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -82,6 +118,10 @@ font-size: 25px;
 }
 .form1 .form2{
   display: flex;
+<<<<<<< HEAD
+=======
+  /* justify-content: center; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   align-items: center;
   width: 70%;
   margin: 15px;
@@ -89,6 +129,10 @@ font-size: 25px;
 
 .form3{
   display: flex;
+<<<<<<< HEAD
+=======
+  /* justify-content: center; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   align-items: center;
   width: 100%;
   margin: 15px;
@@ -102,6 +146,15 @@ h1 {
   text-align: center;
   color: #333;
 }
+<<<<<<< HEAD
+=======
+
+/* input {
+  margin-bottom: 20px;
+} */
+
+
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
 .formulaire label {
   display: flex;
   font-weight: bold;
@@ -116,6 +169,10 @@ h1 {
 }
 
 .formulaire input[type="text"],
+<<<<<<< HEAD
+=======
+/* .formulaire textarea, */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
 .formulaire select {
   width: 50%;
   padding: 10px;
@@ -126,6 +183,10 @@ h1 {
 
 .formulaire button {
   display: block;
+<<<<<<< HEAD
+=======
+  /* width: 100%; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   padding: 10px;
   background-color: #4caf50;
   color: #fff;
@@ -141,13 +202,24 @@ h1 {
   align-items: center;
   margin: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
 .tableau{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 10px; 
+<<<<<<< HEAD
   padding: 20px;
+=======
+  /* max-width: 700px; */
+  /* margin-left: 450px; */
+  padding: 20px;
+  
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -161,8 +233,19 @@ table, tr{
   border: 0.5px solid black;
   border-collapse: collapse; 
   text-align: center;
+<<<<<<< HEAD
 } 
 
+=======
+  /* justify-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  margin-left: 100px; */
+  
+} 
+/* affichage */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
 .calendrier{
   width: 500px;
   height: 11000px;
@@ -175,8 +258,14 @@ table, tr{
   border-radius: 20px;
 }
 .taSK-list{
+<<<<<<< HEAD
   margin-top: 150px; 
   max-width: 800px;
+=======
+  margin-top: 150px; /*a changer plutard*/
+  max-width: 800px;
+  /* margin: 20px auto; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -242,8 +331,14 @@ img{
 
 @media screen and (max-width: 800px) {
   .titre {
+<<<<<<< HEAD
     font-size: 24px; 
     margin-top: 50px; 
+=======
+    font-size: 24px; /* Réduire la taille du titre */
+    margin-top: 50px; /* Ajuster la marge supérieure */
+  }
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   .toggle_menu{
       display: flex;
       height: 40px;
@@ -342,6 +437,11 @@ img{
       align-items: center;
       width: 100%;
       margin-top: 10px; 
+<<<<<<< HEAD
+=======
+      /* max-width: 700px; */
+      /* margin-left: 450px; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
       padding: 20px;
       
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -357,8 +457,18 @@ img{
 
 
   .formulaire {
+<<<<<<< HEAD
       width: 90%;
       margin-top: 100px; 
+=======
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      width: 90%;
+      margin-top: 100px; 
+      /* max-width: 700px; */
+      /* margin-left: 450px; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
       padding: 20px;
       background-color: #fff;
       border-radius: 5px;
@@ -370,6 +480,10 @@ img{
   }
   .form1 .form2{
       display: block;
+<<<<<<< HEAD
+=======
+      /* justify-content: center; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
       align-items: center;
       width: 100%;
       margin: 5px;
@@ -377,6 +491,10 @@ img{
   
   .form3{
       display: block;
+<<<<<<< HEAD
+=======
+      /* justify-content: center; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
       align-items: center;
       width: 100%;
       margin: 5px;
@@ -397,6 +515,10 @@ img{
   }
   
   .formulaire input[type="text"],
+<<<<<<< HEAD
+=======
+  /* .formulaire textarea, */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
   .formulaire select {
       width: 100%;
       padding: 10px;
@@ -407,6 +529,10 @@ img{
   
   .formulaire button {
       display: block;
+<<<<<<< HEAD
+=======
+      /* width: 100%; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
       padding: 10px;
       background-color: #4caf50;
       color: #fff;
@@ -439,8 +565,13 @@ img{
 
 @media screen and (max-width: 800px) {
     .titre {
+<<<<<<< HEAD
       font-size: 24px; 
       margin-top: 50px; 
+=======
+      font-size: 24px; /* Réduire la taille du titre */
+      margin-top: 50px; /* Ajuster la marge supérieure */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
     }
     .toggle_menu{
         display: flex;
@@ -540,6 +671,11 @@ img{
         align-items: center;
         width: 100%;
         margin-top: 10px; 
+<<<<<<< HEAD
+=======
+        /* max-width: 700px; */
+        /* margin-left: 450px; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
         padding: 20px;
         
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -555,8 +691,18 @@ img{
 
   
     .formulaire {
+<<<<<<< HEAD
         width: 90%;
         margin-top: 100px; 
+=======
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 90%;
+        margin-top: 100px; 
+        /* max-width: 700px; */
+        /* margin-left: 450px; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
         padding: 20px;
         background-color: #fff;
         border-radius: 5px;
@@ -568,6 +714,10 @@ img{
     }
     .form1 .form2{
         display: block;
+<<<<<<< HEAD
+=======
+        /* justify-content: center; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
         align-items: center;
         width: 100%;
         margin: 5px;
@@ -575,6 +725,10 @@ img{
     
     .form3{
         display: block;
+<<<<<<< HEAD
+=======
+        /* justify-content: center; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
         align-items: center;
         width: 100%;
         margin: 5px;
@@ -606,6 +760,10 @@ img{
     
     .formulaire button {
         display: block;
+<<<<<<< HEAD
+=======
+        /* width: 100%; */
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
         padding: 10px;
         background-color: #4caf50;
         color: #fff;
@@ -623,6 +781,7 @@ img{
     }
   
     .motivation-introduction {
+<<<<<<< HEAD
       padding: 10px; 
   
     .calendrie {
@@ -634,3 +793,18 @@ img{
       padding: 0 10px; 
     }
   }
+=======
+      padding: 10px; /* Ajuster le rembourrage */
+    }
+  
+    .calendrie {
+      margin: 50px auto; /* Centrer le calendrier */
+      height: auto; /* Ajuster la hauteur automatiquement */
+    }
+  
+    #menu {
+      padding: 0 10px; /* Ajuster le rembourrage */
+    }
+  }
+  
+>>>>>>> da8586ece8c39a48b28c6d5a0b8682ee600d4e14
