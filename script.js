@@ -16,7 +16,7 @@ function Ajouter() {
         terminee: false 
     };
 
-  alert("Valider");
+  alert("Operation validé");
     let taskTable = document.getElementById("taskTable");
     let newRow = taskTable.insertRow(-1); 
 
