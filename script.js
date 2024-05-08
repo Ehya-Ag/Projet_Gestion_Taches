@@ -16,7 +16,7 @@ function Ajouter() {
         terminee: false 
     };
 
-  
+  alert("Valider");
     let taskTable = document.getElementById("taskTable");
     let newRow = taskTable.insertRow(-1); 
 
@@ -58,7 +58,19 @@ function Ajouter() {
     // };
     // optionsCell.appendChild(supprimerButton);
 
+//vider le form
+
+ document.getElementById("titre").value ="";
+ document.getElementById("description").value  ="";
+ document.getElementById("datel").value  ="";
+ document.getElementById("avance").value  ="";
+ document.getElementById("priorite").value ="";
+
+
+
+
     document.getElementById("tacheForm").reset();
+    alert("Operation validé");
 }
 
 function modifier(button) {
@@ -76,9 +88,9 @@ function modifier(button) {
     document.getElementById("avance").value = avancement;
     document.getElementById("priorite").value = priorite;
 
-    row.parentNode.removeChild(row);
+    //row.parentNode.removeChild(row);
 }
-//fonction suppression
+//fonction suppressiongit log
 // function supprimer(button) {
 //     let row = button.parentNode.parentNode;
 //     row.parentNode.removeChild(row);
