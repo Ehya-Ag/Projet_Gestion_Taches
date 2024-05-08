@@ -58,6 +58,7 @@ function Ajouter() {
         supprimer(this);
     };
     optionsCell.appendChild(supprimerButton);
+    sortTasksByDate();
     // Réinitialiser le formulaire
     // document.getElementById("tacheForm").reset();
     var titre = document.getElementById("titre").value ="";
@@ -93,9 +94,31 @@ function supprimer(button) {
 
 
 var small_menu = document.querySelector('.toggle_menu')
-var menu = document.querySelector('.menu')
+var menu = document.querySelector('.navbar')
 
 small_menu.onclick = function(){
     small_menu.classList.toggle('active');
     menu.classList.toggle('responsive');
  }
+
+ function sortTasksByDate() {
+    var taskTable = document.getElementById("taskTable");
+    var rows = taskTable.getElementsByTagName("tr");
+    
+    // Convertir les lignes en un tableau pour trier
+    var rowsArray = Array.from(rows);
+    // Supprimer la première ligne (en-têtes)
+    rowsArray.shift();
+    
+    // Trier les lignes en fonction de la date limite
+    rowsArray.sort(function(a, b) {
+        var dateA = new Date(a.cells[2].textContent);
+        var dateB = new Date(b.cells[2].textContent);
+        return dateA - dateB;
+    });
+    
+    // Réinsérer les lignes dans le tableau
+    rowsArray.forEach(function(row) {
+        taskTable.appendChild(row);
+    });
+}
