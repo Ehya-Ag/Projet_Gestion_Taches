@@ -1,4 +1,143 @@
 
+// function Ajouter() {
+//     // Récupérer les valeurs saisies
+//     var titre = document.getElementById("titre").value;
+//     var description = document.getElementById("description").value;
+//     var dateLimite = document.getElementById("datel").value;
+//     var avancement = document.getElementById("avance").value;
+//     var priorite = document.getElementById("priorite").value;
+
+//     // Créer un objet tâche
+//     var task = {
+//         titre: titre,
+//         description: description,
+//         dateLimite: dateLimite,
+//         avancement: avancement,
+//         priorite: priorite
+//     };
+
+//     // Ajouter la tâche à la liste des tâches
+//     var taskList = document.getElementById("tache");
+//     var taskItem = document.createElement("div");
+//     taskItem.innerHTML = 
+//     "<div class='affiche'>" +
+//     " <table><h3>" + task.titre + "</h3>" +
+    
+//                         "<th><strong>Description:</strong> </th>" +
+//                         "<th><strong>Date limite:</strong> </th>"+
+//                         "<th><strong>Avancement:</strong> </th> "  +
+//                         "<th><strong>Priorité:</strong> </th> <tr>"
+//                          + "<td>" + task.description + "</td>"
+                        
+//                          + 
+//                          "<td>" +task.dateLimite + "</td>"
+                        
+                        
+//                          + "<td>" +task.avancement + "%</td>"
+                       
+//                          + "<td>" +task.priorite + "</td></tr>"
+//                          +
+//                          "<div class='btn'>"+
+//                         '<button onclick="editTask(this)">Modifier</button>';+
+//                         '<button onclick="editTask(this)">Details</button>';+
+//                         '<button onclick="editTask(this)">Modifier</button>';+
+//                         "</div>"
+//                         "</table>" + "</div>"+
+//                         taskList.appendChild(taskItem);
+
+//     // Réinitialiser le formulaire
+//     document.getElementById("tache").reset();
+// }
+
+// function modifier(button) {
+//     var taskDiv = button.parentNode;
+//     var titre = taskDiv.querySelector("h3").innerText;
+//     var description = taskDiv.querySelector("p:nth-of-type(1)").innerText.replace("Description: ", "");
+//     var dateLimite = taskDiv.querySelector("p:nth-of-type(2)").innerText.replace("Date limite: ", "");
+//     var avancement = taskDiv.querySelector("p:nth-of-type(3)").innerText.replace("Avancement: ", "").replace("%", "");
+//     var priorite = taskDiv.querySelector("p:nth-of-type(4)").innerText.replace("Priorité: ", "");
+
+//     // Remplir le formulaire avec les valeurs de la tâche sélectionnée
+//     document.getElementById("titre").value = titre;
+//     document.getElementById("description").value = description;
+//     document.getElementById("datel").value = dateLimite;
+//     document.getElementById("avance").value = avancement;
+//     document.getElementById("priorite").value = priorite;
+
+//     // Supprimer la tâche de la liste
+//     taskDiv.parentNode.removeChild(taskDiv);
+// }
+// //
+//Option2
+// function Ajouter() {
+//     // Récupérer les valeurs saisies
+//     var titre = document.getElementById("titre").value;
+//     var description = document.getElementById("description").value;
+//     var dateLimite = document.getElementById("datel").value;
+//     var avancement = document.getElementById("avance").value;
+//     var priorite = document.getElementById("priorite").value;
+
+//     // Créer un objet tâche
+//     var task = {
+//         titre: titre,
+//         description: description,
+//         dateLimite: dateLimite,
+//         avancement: avancement,
+//         priorite: priorite
+//     };
+
+//     // Ajouter la tâche à la liste des tâches
+//     var taskList = document.getElementById("taskList"); // Changer l'ID en "taskList" pour correspondre au HTML
+//     var taskItem = document.createElement("div");
+//     taskItem.innerHTML = 
+//     "<div class='affiche'>" +
+//     " <table><h3>" + task.titre + "</h3>" +
+    
+//                         "<th><strong>Description:</strong> </th>" +
+//                         "<th><strong>Date limite:</strong> </th>"+
+//                         "<th><strong>Avancement:</strong> </th> "  +
+//                         "<th><strong>Priorité:</strong> </th> <tr>"
+//                          + "<td>" + task.description + "</td>"
+                        
+//                          + 
+//                          "<td>" +task.dateLimite + "</td>"
+                        
+                        
+//                          + "<td>" +task.avancement + "%</td>"
+                       
+//                          + "<td>" +task.priorite + "</td></tr>"
+//                          +
+//                          "<div class='btn'>"+
+//                         '<button onclick="editTask(this)">Modifier</button>' + // Retiré le point-virgule ici
+//                         '<button onclick="editTask(this)">Details</button>' +
+//                         '<button onclick="editTask(this)">Modifier</button>' +
+//                         "</div>" +
+//                         "</table></div>"; // Ajouté une virgule ici
+//     taskList.appendChild(taskItem);
+
+//     // Réinitialiser le formulaire
+//     document.getElementById("tacheForm").reset(); // Changer l'ID du formulaire en "tacheForm" pour correspondre au HTML
+// }
+
+// function modifier(button) {
+//     var taskDiv = button.parentNode;
+//     var titre = taskDiv.querySelector("h3").innerText;
+//     var description = taskDiv.querySelector("th:nth-of-type(1)").innerText.replace("Description: ", ""); // Modifié le sélecteur ici
+//     var dateLimite = taskDiv.querySelector("th:nth-of-type(2)").innerText.replace("Date limite: ", ""); // Modifié le sélecteur ici
+//     var avancement = taskDiv.querySelector("th:nth-of-type(3)").innerText.replace("Avancement: ", "").replace("%", ""); // Modifié le sélecteur ici
+//     var priorite = taskDiv.querySelector("th:nth-of-type(4)").innerText.replace("Priorité: ", ""); // Modifié le sélecteur ici
+
+//     // Remplir le formulaire avec les valeurs de la tâche sélectionnée
+//     document.getElementById("titre").value = titre;
+//     document.getElementById("description").value = description;
+//     document.getElementById("datel").value = dateLimite;
+//     document.getElementById("avance").value = avancement;
+//     document.getElementById("priorite").value = priorite;
+
+//     // Supprimer la tâche de la liste
+//     taskDiv.parentNode.removeChild(taskDiv);
+// }
+//option 3
 function Ajouter() {
 
     let titre = document.getElementById("titre").value;
@@ -51,29 +190,13 @@ function Ajouter() {
         modifier(this);
     };
     optionsCell.appendChild(modifierButton);
-//boutton supprimer
-    // let supprimerButton = document.createElement("button");
-    // supprimerButton.textContent = "Supprimer";
-    // supprimerButton.onclick = function() {
-    //     supprimer(this);
-    // };
-    // optionsCell.appendChild(supprimerButton);
 
-     document.getElementById("titre").value ="";
-     document.getElementById("description").value ="";
-     document.getElementById("datel").value ="";
-     document.getElementById("avance").value ="";
-     document.getElementById("priorite").value ="";
-
-     document.getElementById("titre").value ="";
-     document.getElementById("description").value ="";
-     document.getElementById("datel").value ="";
-     document.getElementById("avance").value ="";
-     document.getElementById("priorite").value ="";
-
-    
-    // Afficher un message de validation
-    alert("La tâche a été ajoutée avec succès !");
+    var supprimerButton = document.createElement("button");
+    supprimerButton.textContent = "Supprimer";
+    supprimerButton.onclick = function() {
+        supprimer(this);
+    };
+    optionsCell.appendChild(supprimerButton);
 
     // Réinitialiser le formulaire
     document.getElementById("tache").reset();
@@ -96,27 +219,17 @@ function modifier(button) {
 
     row.parentNode.removeChild(row);
 }
-//fonction suppression
-// function supprimer(button) {
-//     let row = button.parentNode.parentNode;
-//     row.parentNode.removeChild(row);
-// }
-function showDetails(button) {
-    let row = button.parentNode.parentNode; 
-    let titre = row.cells[0].textContent;
-    let description = row.cells[1].textContent;
-    let dateLimite = row.cells[2].textContent;
-    let avancement = row.cells[3].textContent;
-    let priorite = row.cells[4].textContent;
-    let terminee = row.cells[5].getElementsByTagName('input')[0].checked; 
 
- 
-    let detailMessage = "Titre: " + titre + "\n" +
-                        "Description: " + description + "\n" +
-                        "Date Limite: " + dateLimite + "\n" +
-                        "Avancement: " + avancement + "\n" +
-                        "Priorité: " + priorite + "\n" +
-                        "Terminée: " + (terminee ? "Oui" : "Non"); 
-    alert(detailMessage);
+function supprimer(button) {
+    var row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row);
 }
-//Calendrie
+
+
+var small_menu = document.querySelector('.toggle_menu')
+var menu = document.querySelector('.menu')
+
+small_menu.onclick = function(){
+    small_menu.classList.toggle('active');
+    menu.classList.toggle('responsive');
+ }
