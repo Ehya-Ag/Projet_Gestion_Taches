@@ -50,13 +50,14 @@ function Ajouter() {
         modifier(this);
     };
     optionsCell.appendChild(modifierButton);
+    trie();
 //boutton supprimer
-    // let supprimerButton = document.createElement("button");
-    // supprimerButton.textContent = "Supprimer";
-    // supprimerButton.onclick = function() {
-    //     supprimer(this);
-    // };
-    // optionsCell.appendChild(supprimerButton);
+    let supprimerButton = document.createElement("button");
+    supprimerButton.textContent = "Supprimer";
+    supprimerButton.onclick = function() {
+        supprimer(this);
+    };
+     optionsCell.appendChild(supprimerButton);
 
 //vider le form
 
@@ -91,10 +92,10 @@ function modifier(button) {
     //row.parentNode.removeChild(row);
 }
 //fonction suppressiongit log
-// function supprimer(button) {
-//     let row = button.parentNode.parentNode;
-//     row.parentNode.removeChild(row);
-// }
+function supprimer(button) {
+    let row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
 function showDetails(button) {
     let row = button.parentNode.parentNode; 
     let titre = row.cells[0].textContent;
@@ -113,5 +114,26 @@ function showDetails(button) {
                         "Terminée: " + (terminee ? "Oui" : "Non"); 
     alert(detailMessage);
 }
-//Calendrie
+
+function trie() {
+    let taskTable = document.getElementById("taskTable");
+    let rows = taskTable.getElementsByTagName("tr");
+    
+
+    let rowsArray = Array.from(rows);
+
+    rowsArray.shift();
+    
+    rowsArray.sort(function(a, b) {
+        let dateA = new Date(a.cells[2].textContent);
+        let dateB = new Date(b.cells[2].textContent);
+        return dateA - dateB;
+    });
+    
+
+    rowsArray.forEach(function(row) {
+        taskTable.appendChild(row);
+    });
+}
+
 
